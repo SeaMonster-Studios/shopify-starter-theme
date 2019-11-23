@@ -31,7 +31,8 @@
   {%- endif -%}
 
   {% include 'social-meta-tags' %}
-  {% include 'style-tags', layout: 'theme' %}
+  {% comment %} {% include 'style-tags', layout: 'theme' %} {% endcomment %}
+   {{ 'theme.css' | asset_url | stylesheet_tag }}
   {% include 'css-variables' %}
 
   <script>
@@ -47,7 +48,8 @@
     };
   </script>
 
-  {% include 'script-tags', layout: 'theme' %}
+  {% comment %} {% include 'script-tags', layout: 'theme' %} {% endcomment %}
+  {{ 'theme.js' | asset_url | script_tag }}
 
   {{ content_for_header }}
 </head>
