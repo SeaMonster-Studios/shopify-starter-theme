@@ -52,7 +52,8 @@
     "watch:theme": "cd theme && theme watch",
     "pull:theme": "cd theme && theme download",
     "deploy:theme": "cd theme && theme deploy",
-    "start": "webpack --mode=development --watch",
+    "start": "run-p watch:theme webpack:dev",
+    "webpack:dev": "webpack --mode=development --watch",
     "build": "webpack --mode=production",
     "bootstrap:": "run-s pull:theme start"
   }
