@@ -1,5 +1,11 @@
 # SeaMonster Shopify Starter Theme
 
+Use a modern JavaScript and Sass build system with Shopify.
+
+- Webpack compiles
+- Themekit uploads to your Shopify store
+- Prepros gives you proxying and live reloading
+
 ## Dependencies
 
 - Node 10.x
