@@ -1,12 +1,19 @@
 {
-  "extends": ["plugin:shopify/esnext", "plugin:shopify/jquery"],
+  "extends": ["plugin:shopify/esnext", "plugin:shopify/jquery", "prettier"],
   "env": {
     "jest": true
   },
+  "plugins": ["prettier"],
   "rules": {
+    "prettier/prettier": "error",
     "babel/no-invalid-this": 0,
     "import/no-anonymous-default-export": 0,
-    "import/no-unresolved": ["error", { "ignore": ["^jquery"] }],
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": ["^jquery"]
+      }
+    ],
     "no-alert": 0,
     "no-console": 0,
     "no-new": 0,

@@ -38,5 +38,11 @@ module.exports = {
       filename: "theme.css",
       chunkFilename: "[id].css"
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      jquery: path.resolve("./node_modules/jquery"),
+      "lodash-es": path.resolve("./node_modules/lodash-es")
+    }
+  }
 };
